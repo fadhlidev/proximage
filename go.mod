@@ -4,6 +4,7 @@ go 1.25.0
 
 require (
 	github.com/andybalholm/brotli v1.2.0 // indirect
+	github.com/chai2010/webp v1.4.0 // indirect
 	github.com/gofiber/fiber/v3 v3.1.0 // indirect
 	github.com/gofiber/schema v1.7.0 // indirect
 	github.com/gofiber/utils/v2 v2.0.2 // indirect
@@ -16,7 +17,8 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.69.0 // indirect
 	golang.org/x/crypto v0.48.0 // indirect
+	golang.org/x/image v0.39.0 // indirect
 	golang.org/x/net v0.50.0 // indirect
 	golang.org/x/sys v0.41.0 // indirect
-	golang.org/x/text v0.34.0 // indirect
+	golang.org/x/text v0.36.0 // indirect
 )
