@@ -1,0 +1,10 @@
+services:
+  proximage:
+    build: .
+    network_mode: "host"
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    environment:
+      - GODEBUG=netdns=go+v4
+    restart: unless-stopped

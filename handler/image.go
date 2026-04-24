@@ -24,7 +24,7 @@ import (
 
 const (
 	maxImageSize = 10 << 20 // 10 MB
-	fetchTimeout = 10 * time.Second
+	fetchTimeout = 25 * time.Second
 	webpQuality  = 82.0
 )
 
@@ -89,7 +89,7 @@ func fetchAndConvert(imageURL string) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("User-Agent", "WebP-Proxy/1.0")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
 
 	resp, err := httpClient.Do(req)
 	if err != nil {

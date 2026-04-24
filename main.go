@@ -39,7 +39,5 @@ func main() {
 
 	app.Get("/image", imgHandler.Convert)
 
-	log.Fatal(app.Listen(":3000", fiber.ListenConfig{
-		EnablePrefork: true,
-	}))
+	log.Fatal(app.Listen(":3000"))
 }

@@ -55,3 +55,14 @@ go build
 ```bash
 go test
 ```
+
+## Docker
+
+```bash
+docker compose up -d
+```
+
+The server runs on `http://localhost:3000`.
+
+**Environment variables:**
+- `GODEBUG=netdns=go+v4` - DNS resolution (Docker)
